@@ -7,4 +7,7 @@ RUN apk --update add curl git openssh unzip \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
+COPY /DkrBldCtx/a.txt /a.txt
+
+
 CMD /bin/sh
